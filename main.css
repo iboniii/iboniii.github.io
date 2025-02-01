@@ -1,0 +1,72 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #101010;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* Container for all content */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 30px rgba(0, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+/* Header Styling */
+header h1 {
+    color: #00eaff;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Task List Styling */
+.tasks h2 {
+    color: #00eaff;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+}
+
+.tasks a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.tasks a:hover {
+    color: #00eaff;
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #00eaff;
+    text-align: center;
+    border-top: 1px solid #00eaff;
+    padding-top: 10px;
+}
+
+/* General Styling for the Page */
+ol {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
