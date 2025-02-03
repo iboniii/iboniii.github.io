@@ -1,62 +1,175 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #dcedc1; /* Matcha green background */
-    color: #333;
+    background: linear-gradient(135deg, #0f172a, #1e293b); /* Futuristic dark gradient */
+    color: #00eaff; /* Cyan text for a modern look */
+    line-height: 1.6;
 }
+
+/* Header */
 header {
-    background-color: #88b04b; /* Matcha green shade for header */
-    color: white;
+    background: linear-gradient(135deg, #1f2937, #374151); /* Dark gradient for header */
+    color: #00eaff;
     text-align: center;
-    padding: 20px 10px;
+    padding: 40px 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 header img {
-    max-width: 100px;
+    max-width: 120px;
+    margin-bottom: 20px;
 }
+
+header h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+/* Navigation */
 nav {
-    background-color: #6b8e23; /* Darker matcha green */
-    padding: 10px;
+    background-color: #111827; /* Dark background for navigation */
+    padding: 15px;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 30px;
 }
+
 nav a {
     text-decoration: none;
-    color: white;
+    color: #00eaff;
     font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 12px 20px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
 }
+
 nav a:hover {
-    background-color: #556b2f; /* Dark green hover effect */
+    background-color: #374151;
+    border: 2px solid #f43f5e; /* Glowing red border */
+    color: #f43f5e; /* Glowing red text */
+    transform: scale(1.05);
 }
+
+/* Main content */
 main {
-    padding: 20px;
+    padding: 50px 20px;
     text-align: center;
 }
+
+/* Headings */
 h1, h2, h3 {
-    color: #2e4600; /* Deep green for headings */
+    color: #00eaff;
+    text-shadow: 0px 0px 10px rgba(0, 255, 255, 0.5);
 }
+
+/* Sections */
+section {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.03);
+}
+
+/* List items */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 15px;
+    background-color: #2d3748;
+    margin: 10px 0;
+    border-radius: 8px;
+    color: #f43f5e;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+ul li:hover {
+    background-color: #374151;
+    transform: translateX(10px);
+}
+
+/* Call to action button */
 .cta {
-    margin-top: 20px;
-    background-color: #88b04b; /* Matcha button */
-    color: white;
+    margin-top: 30px;
+    background-color: #00eaff;
+    color: #1e293b;
     padding: 15px 30px;
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2em;
+    border-radius: 50px;
+    font-size: 1.4em;
+    font-weight: 500;
+    border: 2px solid #00eaff;
+    transition: all 0.3s ease;
 }
+
 .cta:hover {
-    background-color: #6b8e23; /* Darker green hover */
-}
-footer {
-    background-color: #6b8e23;
+    background-color: #f43f5e;
     color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    border-color: #f43f5e;
+    transform: scale(1.05);
 }
-.branch {
+
+/* Footer */
+footer {
+    background-color: #111827;
+    color: #00eaff;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 50px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer a {
+    color: #00eaff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #f43f5e;
+}
+
+footer p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+footer .branch {
     margin: 15px 0;
+}
+
+/* Animation for section entries */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: fadeInUp 0.8s ease-out;
 }

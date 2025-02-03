@@ -9,57 +9,64 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #dcedc1; /* Matcha green background */
-            color: #333;
+            background: linear-gradient(135deg, #0f172a, #1e293b); /* Futuristic dark background */
+            color: #00eaff; /* Techy light cyan */
         }
         header {
-            background-color: #88b04b; /* Matcha green shade for header */
-            color: white;
+            background-color: #1f2937; /* Dark tech background */
+            color: #00eaff;
             text-align: center;
             padding: 20px 10px;
+            border-bottom: 2px solid #00eaff; /* Border for modern touch */
         }
         header img {
             max-width: 100px;
         }
         nav {
-            background-color: #6b8e23; /* Darker matcha green */
-            padding: 10px;
+            background-color: #111827; /* Darker background for nav */
+            padding: 15px;
             display: flex;
             justify-content: center;
             gap: 15px;
         }
         nav a {
             text-decoration: none;
-            color: white;
+            color: #00eaff;
             font-weight: bold;
-            padding: 10px 20px;
+            padding: 12px 20px;
             border-radius: 5px;
+            border: 1px solid #00eaff; /* Techy border for nav items */
         }
         nav a:hover {
-            background-color: #556b2f; /* Dark green hover effect */
+            background-color: #374151; /* Darker hover for buttons */
+            border-color: #ffffff; /* White hover border */
+            color: #ffffff; /* White hover text */
         }
         main {
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
         }
         h1, h2, h3 {
-            color: #2e4600; /* Deep green for headings */
+            color: #00eaff; /* Light cyan headings */
         }
         .cta {
             margin-top: 20px;
-            background-color: #88b04b; /* Matcha button */
-            color: white;
+            background-color: #00eaff; /* Tech button color */
+            color: #1e293b; /* Dark text color */
             padding: 15px 30px;
             text-decoration: none;
             border-radius: 5px;
             font-size: 1.2em;
+            border: 1px solid #00eaff; /* Matching border */
         }
         .cta:hover {
-            background-color: #6b8e23; /* Darker green hover */
+            background-color: #ffffff; /* White hover for button */
+            color: #1e293b;
+            border-color: #ffffff;
         }
         footer {
-            background-color: #6b8e23;
-            color: white;
+            background-color: #1f2937; /* Dark footer */
+            color: #00eaff;
             text-align: center;
             padding: 10px 0;
             margin-top: 20px;
@@ -71,96 +78,109 @@
             width: 100%;
             border-collapse: collapse;
             margin: 20px auto;
-            background-color: #333;
-            color: #fff;
+            background-color: #1f2937; /* Dark tech table */
+            color: #00eaff;
         }
         th, td {
-            border: 1px solid #555;
+            border: 1px solid #374151;
             padding: 10px;
             text-align: center;
         }
         th {
-            background-color: #444;
+            background-color: #374151; /* Dark background for headers */
             font-weight: bold;
-            color: #00ffcc;
+            color: #ffffff; /* White header color */
         }
         tr:nth-child(odd) {
-            background-color: #88b04b; /* Dark matcha green */
+            background-color: #2d3748; /* Slightly lighter dark rows */
         }
         tr:nth-child(even) {
-            background-color: #dcedc1; /* Light matcha green */
+            background-color: #1f2937; /* Dark matching rows */
         }
         td {
-            color: #000;
+            color: #ffffff; /* White for table text */
+        }
+        .note {
+            font-style: italic;
+            color: #ffffff; /* White note text */
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>2nd Term Course Schedule</h1>
+    <header>
+        <h1>2nd Term Course Schedule</h1>
+    </header>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Course Name</th>
-                <th>Day of the Week</th>
-                <th>Start Time</th>
-                <th>End Time</th>
-                <th>Room</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="neon-row">
-                <td>HUM039</td>
-                <td>Mon, Wed</td>
-                <td>1:15 PM</td>
-                <td>2:30 PM</td>
-                <td>A224</td>
-            </tr>
-            <tr class="neon-row">
-                <td>SS086</td>
-                <td>Tue</td>
-                <td>2:30 PM</td>
-                <td>3:45 PM</td>
-                <td>V407</td>
-            </tr>
-            <tr class="neon-row">
-                <td>CS107L</td>
-                <td>Thu</td>
-                <td>1:15 PM</td>
-                <td>3:45 PM</td>
-                <td>R416</td>
-            </tr>
-            <tr class="neon-row">
-                <td>IT103</td>
-                <td>Fri</td>
-                <td>3:45 PM</td>
-                <td>5:00 PM</td>
-                <td>R307</td>
-            </tr>
-            <tr class="neon-row">
-                <td>IS105</td>
-                <td>Mon, Wed, Thu</td>
-                <td>8:00 AM</td>
-                <td>9:15 AM</td>
-                <td>A224</td>
-            </tr>
-            <tr class="neon-row">
-                <td>IT103L</td>
-                <td>Fri</td>
-                <td>9:30 AM</td>
-                <td>11:00 AM</td>
-                <td>R516</td>
-            </tr>
-            <tr class="neon-row">
-                <td>CS107</td>
-                <td>Tue</td>
-                <td>10:00 AM</td>
-                <td>11:15 AM</td>
-                <td>V407</td>
-            </tr>
-        </tbody>
-    </table>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Course Name</th>
+                    <th>Day of the Week</th>
+                    <th>Start Time</th>
+                    <th>End Time</th>
+                    <th>Room</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="neon-row">
+                    <td>HUM039</td>
+                    <td>Mon, Wed</td>
+                    <td>1:15 PM</td>
+                    <td>2:30 PM</td>
+                    <td>A224</td>
+                </tr>
+                <tr class="neon-row">
+                    <td>SS086</td>
+                    <td>Tue</td>
+                    <td>2:30 PM</td>
+                    <td>3:45 PM</td>
+                    <td>V407</td>
+                </tr>
+                <tr class="neon-row">
+                    <td>CS107L</td>
+                    <td>Thu</td>
+                    <td>1:15 PM</td>
+                    <td>3:45 PM</td>
+                    <td>R416</td>
+                </tr>
+                <tr class="neon-row">
+                    <td>IT103</td>
+                    <td>Fri</td>
+                    <td>3:45 PM</td>
+                    <td>5:00 PM</td>
+                    <td>R307</td>
+                </tr>
+                <tr class="neon-row">
+                    <td>IS105</td>
+                    <td>Mon, Wed, Thu</td>
+                    <td>8:00 AM</td>
+                    <td>9:15 AM</td>
+                    <td>A224</td>
+                </tr>
+                <tr class="neon-row">
+                    <td>IT103L</td>
+                    <td>Fri</td>
+                    <td>9:30 AM</td>
+                    <td>11:00 AM</td>
+                    <td>R516</td>
+                </tr>
+                <tr class="neon-row">
+                    <td>CS107</td>
+                    <td>Tue</td>
+                    <td>10:00 AM</td>
+                    <td>11:15 AM</td>
+                    <td>V407</td>
+                </tr>
+            </tbody>
+        </table>
 
-    <p class="note">Note: Rooms that start with "V" are virtual rooms and are meant for online sessions.</p>
+        <p class="note">Note: Rooms that start with "V" are virtual rooms and are meant for online sessions.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your School. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
