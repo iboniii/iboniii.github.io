@@ -1,72 +1,177 @@
-/* General Body Styling */
 body {
-    font-family: 'Arial', sans-serif;
-    background: #101010;
-    color: #fff;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #00eaff;
     text-align: center;
-    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-size: 18px;
 }
 
-/* Container for all content */
-.container {
+.home {
+    background: linear-gradient(to right, rgba(15, 23, 42, 0.9), rgba(30, 41, 59, 0.9)), 
+                url('/Portfolio/wew.jpg') center/cover;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #00eaff;
+    padding: 20px;
+    border-bottom: 2px solid rgba(0, 234, 255, 0.3);
+    position: relative;
+}
+
+.home h1 {
+    font-size: 3rem;
+}
+
+.home h3 {
+    font-size: 2rem;
+}
+
+.home h4 {
+    font-size: 1.5rem;
+}
+
+.home h1, .home h3, .home h4 {
+    text-shadow: 0px 0px 15px rgba(0, 234, 255, 0.7);
+}
+
+.home img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-top: 15px;
+    border: 3px solid rgba(0, 234, 255, 0.7);
+    box-shadow: 0px 0px 20px rgba(0, 234, 255, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.home img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 25px rgba(0, 234, 255, 0.9);
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: rgba(0, 234, 255, 0.3);
+    color: #00eaff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 1px solid rgba(0, 234, 255, 0.6);
+    text-shadow: 0px 0px 10px rgba(0, 234, 255, 0.7);
+    transition: 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background: rgba(0, 234, 255, 0.5);
+    box-shadow: 0px 0px 15px rgba(0, 234, 255, 0.9);
+    transform: scale(1.05);
+}
+
+.skills {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+}
+
+.skill-list span {
+    background: rgba(0, 234, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 234, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
+    color: #00eaff;
+    font-size: 1.2rem;
+}
+
+.skill-list span:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 234, 255, 0.6);
+}
+
+.projects {
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    padding: 40px;
-    width: 90%;
-    max-width: 800px;
-    box-shadow: 0 4px 30px rgba(0, 255, 255, 0.3);
+    padding: 50px;
+    text-align: center;
+    border: 1px solid rgba(0, 234, 255, 0.3);
     backdrop-filter: blur(10px);
 }
 
-/* Header Styling */
-header h1 {
-    color: #00eaff;
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 20px;
+.projects h2 {
+    font-size: 2.5rem;
 }
 
-/* Task List Styling */
-.tasks h2 {
-    color: #00eaff;
-    font-size: 1.5rem;
+.project-group-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
     margin-top: 20px;
-    text-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
 }
 
-.tasks a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.tasks a:hover {
-    color: #00eaff;
-    text-decoration: underline;
-}
-
-/* Footer Styling */
-footer {
-    margin-top: 30px;
-    font-size: 0.9rem;
-    color: #00eaff;
+.project-group {
+    flex: 1;
+    max-width: 300px;
+    border: 3px solid #00eaff;
+    padding: 20px;
     text-align: center;
-    border-top: 1px solid #00eaff;
-    padding-top: 10px;
+    transition: transform 0.3s ease-in-out;
+    background: rgba(0, 234, 255, 0.1);
+    min-width: 250px;
 }
 
-/* General Styling for the Page */
-ol {
-    padding-left: 0;
+.project-group h3 {
+    font-size: 1.8rem;
+}
+
+.project-group:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 234, 255, 0.6);
+}
+
+.project-group a {
+    color: #00ffcc;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.project-group a:hover {
+    text-shadow: 0 0 10px rgba(0, 234, 255, 0.8);
+}
+
+.project-group ul {
     list-style-type: none;
+    padding-left: 0;
 }
 
-ol li {
-    margin-bottom: 10px;
+.project-group li {
+    margin: 10px 0;
+}
+
+.contact a {
+    color: #00ffcc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-shadow: 0 0 10px rgba(0, 234, 255, 0.8);
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 0;
+    margin-top: 50px;
+    color: #00ffcc;
 }

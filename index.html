@@ -3,40 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marie Ivone's Web Page</title>
+    <title>My Firs Web Page</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="main.js" defer></script>
 </head>
-<body onload="showAlert()">
-    <div class="container">
-        <header>
-            <h1>Hi! I am Marie Ivone</h1>
-        </header>
+<body>
 
-        <section class="tasks">
-            <h2>HTML Tasks</h2>
-            <ol>
-                <li><a href="./HTML Tasks/ForonesExplorePHTours.html">Explore PH Tours</a></li>
-                <li><a href="./HTML Tasks/ForonesCourseSchedule.html">Course Schedule</a></li>
-            </ol>
 
-            <h2>CSS Tasks</h2>
-            <ol>
-                <li><a href="./IT103_M1_CSS3_ACT1-10.html">CSS3 Activities 1-10</a></li>
-            </ol>
+   
+    <section id="home" class="home">
+        <div class="content">
+            <h1>Welcome to My Portfolio</h1>
+            <img src="IvoneGanda.jpg" alt="Marie Ivone's Profile Picture">
+            <h3>Hi! I Am Marie Ivone</h3>
+            <h4>Information Systems Student</h4>
+            <a href="Achievement.html" class="btn">View Achievements</a>
+        </div>
+    </section>
 
-            <h2>JS Tasks</h2>
-            <ol>
-                <li><a href="FORONES_A224_JS.html">Javascript Activity</a></li>
-            </ol>
+    
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <div class="skill-list">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Java</span>
+            <span>Python</span>
+            <span>SQL</span>
+        </div>
+    </section>
 
-            <h2><a href="Achievement.html">Achievement</a></h2>
-            <h2><a href="Questions.html">Following Questions</a></h2>
-        </section>
+    
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-group-container">
+            <div class="project-group">
+                <h3>HTML Task</h3>
+                <ul>
+                    <li><a href="./HTML Tasks/ForonesExplorePHTours.html">Explore PH Tours</a></li>
+                    <li><a href="./HTML Tasks/ForonesCourseSchedule.html">Course Schedule</a></li>
+                </ul>
+            </div>
 
-        <footer>
-            <p>&copy; 2025 Marie Ivone. All Rights Reserved.</p>
-        </footer>
+            <div class="project-group">
+                <h3>CSS Task</h3>
+                <ul>
+                    <li><a href="./IT103_M1_CSS3_ACT1-10.html">CSS3 Activities 1-10</a></li>
+                </ul>
+            </div>
+
+            <div class="project-group">
+                <h3>JS Task</h3>
+                <ul>
+                    <li><a href="FORONES_A224_JS.html">JavaScript Activity</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:miForones@mcm.edu.ph">miForones@mcm.edu.ph</a></p>
+        <p>Follow me on:</p>
+        <div class="social-links">
+            <a href="https://github.com/iboniii" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+    </section>
+
+   
+    <div class="centered">
+        <a href="Questions.html" class="btn">Following Question</a>
     </div>
+
+   
+    <footer>
+        <p>&copy; 2025 Marie Ivone. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
